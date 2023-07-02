@@ -1,0 +1,51 @@
+.products {
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+.products .row {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products img {
+    width: 80px;
+    border-radius: 9px;
+    margin-right: 10px;
+}
+
+.products .btn {
+    margin-left: 0;
+    background: #ff5644;
+    width: 300px;
+    height: 50px;
+}
+
+.btn_clear {margin: 20px 0 0 10px;
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            border: 0;
+            font-size: 14px;
+            background: #9D9C9CFF;
+            color: #0A0808FF;
+            cursor: pointer;
+            transition: all 600ms ease;
+            }
+
+.btn_cash {margin: 20px 20px 0 5px;
+            width: auto;
+            padding: 5px;
+            height: 50px;
+            border-radius: 5px;
+            border: 0;
+            font-size: 14px;
+            background: #ff5644;
+            color: white;
+            cursor: pointer;
+            transition: all 600ms ease;
+          }
+

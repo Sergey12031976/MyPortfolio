@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700&display=swap&subset=cyrillic-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background: #fafafa;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 0.5%;
+}
+
+a {
+  text-decoration: none;
+  transition: color 600ms ease;
+}
+
+img {max-width: 100%}
+
+header {
+  width: 95%;
+  padding: 20px 2%;
+  background: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header > .logo {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+header > .nav {
+  position: relative;
+  left: -50px;
+}
+
+header > .nav a {
+  margin: 0 15px;
+  display: inline-block;
+  color: purple;
+}
+
+header >.tel > i {
+  transform: rotate(90deg);
+  margin-right: 10px;
+}
+
+header > .nav a:hover,
+header > .menu:hover {color: #4f4e4e}
+
+header > .menu {
+  cursor: pointer;
+  color: #a3a3a3;
+  font-size: 23px;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid silver;
+}
+
+#hidden-menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  background: bisque;
+  z-index: 10;
+  text-align: center;
+}
+
+#hidden-menu .close {
+  font-size: 40px;
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 600ms ease;
+}
+
+#hidden-menu .close:hover {color: #ccc}
+
+#hidden-menu h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#hidden-menu ul {list-style: none}
+
+#hidden-menu ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#hidden-menu ul li a {color: #333}
+#hidden-menu ul li a:hover {color: #ccc}
+
+.full-page,
+.bg-fixed {
+  display: block;
+  width: 95%;
+  padding: 2%;
+  /*height: 95vh;*/
+  background: url('../img/remont/main-bg.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #757575;
+  text-align: center;
+  color: #fff;
+}
+
+.full-page h1 {
+  padding-top: 250px;
+  font-size: 45px;
+  /*width: 500px;*/
+  /*margin: 0 auto;*/
+}
+
+.full-page h3 {
+  margin: 20px 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.full-page button,
+.bg-fixed button {
+  width: auto;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+  background: #ffc107;
+  color: #704404;
+  font-weight: 500;
+  transition: background 600ms ease;
+}
+
+.full-page button i,
+.bg-fixed button i {
+  margin-left: 5px;
+  transition: margin 600ms ease;
+}
+
+.full-page button:hover,
+.bg-fixed button:hover {background: #ff9800}
+
+.full-page button:hover i,
+.bg-fixed button:hover i {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 2%;
+}
+
+.features > div {
+  width: 95%;
+  text-align: center;
+  margin: 50px 10px;
+}
+
+.features > div img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.features > div h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #454545;
+}
+
+.features > div p {font-weight: 200}
+
+.gallery {
+  width: 90%;
+  margin: 2%;
+  position: relative;
+  left: 100px;
+}
+
+.gallery div {
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.gallery .arrow-prev,
+.gallery .arrow-next {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transition: all 600ms ease;
+}
+
+.gallery .arrow-prev:hover,
+.gallery .arrow-next:hover {transform: scale(1.4)}
+
+.gallery .arrow-prev {left: -50px}
+.gallery .arrow-next {right: -30px}
+
+.feedback { border: ridge 3px purple;
+            font-size: 1em;
+            font-weight: bold;
+            color: purple;
+            background: palegoldenrod;
+            padding: 1%;
+            overflow-y: scroll;
+            height: 50px;
+}
+
+.bg-fixed {
+  height: 700px;
+  background-image: url('../img/remont/bg-fixed.jpg');
+}
+
+.bg-fixed h3 {
+  font-size: 25px;
+  padding-top: 130px;
+  margin-bottom: 20px;
+}
+
+.bg-fixed input {
+  padding: 14px 20px;
+  width: 300px;
+  font-size: 14px;
+  border: 0;
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+footer {
+  width: 90%;
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .up-btn,
+footer .social div {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  color: #3b3b3b;
+  transition: transform 600ms ease;
+}
+
+footer .up-btn:hover,
+footer .social div:hover {
+  transform: translateY(-10px);
+}
+
+footer .social div {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.form-control {
+  width: 50%;
+  margin: 2%;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  background: #fcfcfc;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-control textarea {
+  height: 200px;
+  resize: none;
+}
+
+.form-control .btn {
+  margin-left: 0;
+  margin-top: 15px;
+  background: #ff5644;
+  color: white;
+}
+
+.form-control .error {
+  color: #ff5644;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.btn_why {
+  width: auto;
+  height: 20px;
+  background: #ff5644;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 600ms ease;
+  padding: 10px 5px 10px 5px;
+
+}
+
+.btn_why:hover {
+  transition: all 600ms ease;
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.3);
+}
+
+.blick {
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20%;
+  height: inherit;
+  padding-top: 1vw;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid silver;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  color: purple;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  background: gold;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.blick:after {
+  content: "";
+  display: block;
+  width: 2vw;
+  height: 20vw;
+  margin-left: 4vw;
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  position: absolute;
+  left: -2vw;
+  top: -8vw;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.fuq {
+  width: 95%;
+  padding: 2%;
+
+  background: url('../img/remont/main-bg.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #757575;
+  text-align: justify-all;
+  color: #fff;
+}
+
+@-webkit-keyframes slideme {
+  0% { left: -30px; margin-left: 0px; }
+  30% { left: 110%; margin-left: 80px; }
+  100% { left: 110%; margin-left: 80px; }
+}
+
+@media(max-width: 1035px){
+  .btn_why{width: 50%}
+}
+
+@media(min-width: 790px){
+                          .menu_mobile{display: none}
+                          }
+
+@media(max-width: 790px){
+  .nav{display: none}
+}
+
+@media(max-width: 520px){
+  .full-page h1 {font-size: 1.5em}
+}
+
+@media(max-width: 520px){
+  .gallery {height: 300px}
+
+}

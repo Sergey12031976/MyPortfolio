@@ -1,0 +1,12 @@
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+    background: url("../img/entrance.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: silver;
+    /*padding: 1%;*/
+}
