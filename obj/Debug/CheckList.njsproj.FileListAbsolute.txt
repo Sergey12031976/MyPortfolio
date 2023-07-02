@@ -1,0 +1,2 @@
+D:\MyPortfolio\CheckList\obj\Debug\CheckList.njsproj.CoreCompileInputs.cache
+D:\MyPortfolio\CheckList\bin\Microsoft.NodejsTools.WebRole.dll
