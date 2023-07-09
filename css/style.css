@@ -1,0 +1,394 @@
+
+
+@font-face {
+	font-family: 'Font Name';
+	src: local('Font Name'),
+		url(/fonts/*.ttf);
+}
+
+body {width: 90vw;
+      height: 50vw;
+      margin: 0vw;
+      padding: 0vw;}
+
+
+
+* a {text-decoration: none;}
+
+
+
+.conteiner {width: inherit;
+            height: inherit;
+            background: url("../images/fon.png") no-repeat center center;
+            background-size: contain;
+            margin: 0vw;
+            padding-right: 5vw;
+            padding-top: 2vw;
+            padding-left: 5vw;
+            }
+
+header {width: 90vw;
+        height: 5vw;
+
+        }
+.logo {width: 10vw;
+      float: left;
+      }
+
+.logo img {width: 10vw;}
+
+.intro {width: 17vw;
+        height: 4vw;
+        float: left;
+        margin-left: 2vw;
+        font-family: "UniNeue", sans-serif;
+        }
+
+.intro p {font-size: 1vw;}
+
+.adress {width: 13vw;
+        height: 4vw;
+        float: left;
+        margin-left: 2vw;
+        font-family: "UniNeue", sans-serif;
+        }
+
+.adress p {font-size: 0.8vw;
+            position: relative;
+            top: -5.5vw;
+           left: 5vw;}
+
+.adress a {color: black;}
+
+.adress p:hover {font-size: 1.1vw;
+                 transition: font-size 600ms;
+                 color: blue;}
+
+.adress img {width: 6vw;
+             position: relative;
+             top: -1vw;
+            left: -1vw;}
+
+.lang {width: 13vw;
+        max-height: 6vw;
+        float: left;
+        margin-left: 2vw;
+        font-family: "UniNeue", sans-serif;
+        font-size: 0.8vw;
+        text-align: center;
+        padding-top: 1vw;
+        }
+
+.lang a {font-size: 0.8vw;}
+
+.ru {color: red;}
+
+.lang a:hover {font-size: 1.1vw;
+              font-weight: bold;
+              color: red;
+              transition: font-size 600ms;
+              }
+
+#consult {width: 12vw;
+        float: left;
+        margin: 1vw 0 auto 2vw;
+        padding: 1vw;
+        height: 3vw;
+        border-radius: 0.3vw;
+        color: white;
+        background-color: #484848;
+        font-family: "UniNeue", sans-serif;
+        font-size: 0.7vw;
+      }
+
+#consult a {color: white}
+
+.contact {width: 10vw;
+          height: 3vw;
+          float: left;
+          margin: 1vw 0 auto 3vw;
+          }
+
+.contact img {float: left;
+              width: 1vw;
+              }
+
+.ico_fone { animation-name: rotate;
+            animation-duration: 300ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform-origin: 0.5vw 0.5vw;
+            }
+
+@keyframes rotate { from { transform: rotate(0deg);
+                            }
+                        to { transform: rotate(45deg); }
+                        }
+
+.fone_num {width: 9vw;
+          height: 1vw;
+          float: left;
+          font-family: "UniNeueHeavy", sans-serif;
+          font-weight: 700;
+          margin-bottom: 0.5vw;
+           }
+
+.fone_num a {text-decoration: none;
+              color: black;
+              font-size: 1vw;}
+
+.ico {width: 8vw;
+      height: 3vw;
+      margin-left: 1vw;}
+
+.ico img {width: 2vw;
+          height: 2vw;
+          border-radius: 3vw;
+          float: left;
+          margin-left: 0.5vw;}
+
+.ico img:hover {width: 2.5vw;
+              transition: width 600ms;}
+
+@media(min-width: 800px) {
+                            .menu {display: none;}
+                          }
+
+.menu {cursor: pointer;
+      color: black;
+      font-size: 1.5vw;
+      float: right;
+      }
+
+#hidden-menu {width: 20vw;
+              position: fixed;
+              top: 2vw;
+              right: -20vw;
+              height: 40vw;
+              background: #fff;
+              z-index: 10;
+              text-align: center;
+              font-family: "UniNeue", sans-serif;
+              font-size: 1vw;
+              }
+.close{font-size: 1.5vw;
+       float: right;
+       margin-right: 2vw;
+       font-weight: bold;
+       cursor: pointer;
+       transition: color 600ms ease;
+        }
+
+
+#hidden-menu h2 {margin-top: 100px;
+                 margin-bottom: 20px;}
+#hidden-menu ul {list-style: none;}
+#hidden-menu ul li {display: block;
+                    margin-bottom: 10px;}
+#hidden-menu ul a {color: blue;
+                  font-family: "UniNeue", sans-serif;
+                    font-size: 0.9vw;}
+
+
+@media(max-width: 800px) {
+                          .nav {display: none;}
+                }
+
+.nav {width: 90vw;
+      height: 2vw;
+      margin-top: 2vw;
+
+      }
+
+.nav a{text-decoration: none;
+        font-family: "UniNeue", sans-serif;
+        font-size: 0.9vw;
+        color: black;
+        font-weight: bold;
+        margin-right: 4vw;}
+
+.nav a:hover {font-size: 1.1vw;
+              transition: font-size 600ms;
+              color: blue;}
+
+.content {margin: 3.5em 0 3em 0;
+          width: 35vw;
+          font-family: "Uni Neue Bold", sans-serif;
+          font-size: 1.8vw;
+          letter-spacing: 0.3vw;
+          }
+
+.man {width: 30vw;
+      height: 39.2vw;
+      position: absolute;
+      top: 12.8vw;
+      right: 5vw;
+      overflow: hidden;
+      }
+
+.man img {width: 100%}
+
+.info {margin: 3em 0 3em 0;
+       width: 60vw;
+       height: 10vw;
+       }
+
+.info_const img{float: left;
+                width: 1vw;}
+
+.info_const span {margin-top: 1vw;
+                  font-family: "Uni Neue",sans-serif;
+                  font-size: 1vw;}
+
+.out_run span {margin-top: 1vw;
+                  font-family: "Uni Neue",sans-serif;
+                  font-size: 1vw;}
+
+.years {font-family: "Uni Neue",sans-serif;
+        font-weight: bolder;
+        font-size: 4vw;
+        float: left;
+        margin-right: 0.5vw;
+        width: 5vw;
+        }
+
+.info_const {margin-right: 1vw;
+             width: 17vw;
+             height: 6vw;
+             float: left;
+             }
+
+
+
+.out_run {float: left;
+          width: 10vw;
+          height: 6vw;
+          font-family: "Uni Neue",sans-serif;
+          margin-top: 0.6vw;
+          margin-left: 0.5vw;}
+
+.calc {width: 25vw;
+      font-family: "Uni Neue",sans-serif;
+      font-size: 0.9vw;
+      float: left;}
+
+#btn_calc {margin:2vw 0 1vw 0;
+          width: 20vw;
+          padding: 1vw;
+          text-align: left;
+          font-family: "Uni Neue",sans-serif;
+          font-size: 0.9vw;
+          background-color: #50bc5b;
+          color: white;
+          border-radius: 0.2vw;
+            }
+
+#btn_calc img {width: 1.5vw;
+              float: left;
+              margin-right: 0.5vw;}
+
+.discount {background-color: white;}
+
+.map {width: 60vw;
+      transition: width 1s;
+      position: absolute;
+      top: -40vw;
+      right: 10vw;}
+
+.invisible {display: none;}
+
+.blick {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 4vw;
+    padding-top: 1vw;
+    border: none;
+    border-bottom: 2px solid #beb038;
+    position: relative;
+    /* font-size: 15px;
+    font-weight: bold;
+    color: #000; */
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    background: #f3d429;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+}
+.blick:after {
+    content: "";
+    display: block;
+    width: 2vw;
+    height: 20vw;
+    margin-left: 4vw;
+    background: #fff;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+    position: absolute;
+    left: -2vw;
+    top: -8vw;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-animation-name: slideme;
+    animation-name: slideme;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slideme {
+    0% { left: -30px; margin-left: 0px; }
+    30% { left: 110%; margin-left: 80px; }
+    100% { left: 110%; margin-left: 80px; }
+}
+
+.sert {
+      -webkit-backface-visibility: hidden;
+     display: none;
+    height: inherit;
+    width: 100vw;
+    left: 0;
+    outline: none;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 5vw;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    background-color: rgba(41,39,40,0.9);
+    transition-property: transform,opacity;
+    white-space: normal;
+    z-index: 99994;
+    }
+
+.slider {display: inline-flex;
+          float: left;
+        margin-left: 3vw;}
+
+.slider img {width: 5vw;
+            margin-left: 1vw;}
+
+.sert img {width: 30vw;}
