@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+*{margin: 0;
+  padding: 0;
+  outline: none;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+
+h1 {font-family: Helvetica, Arial, sans-serif;
+		text-align: center;
+		color: gold;
+		text-shadow: 3px 3px 3px blue, 3px -3px 3px green;}
+body {background-attachment: fixed;
+      background: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614849965_178-p-foni-dlya-detskikh-fotografii-210.jpg) no-repeat center center;
+      background-size: cover;
+			}
+
+
+.wraper {
+	width: 100%;
+	height: contain;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+form {font-family: "Montserrat", sans-serif;
+	  font-weight: bold;
+      color: purple;
+      border: ridge 10px gold;
+      padding: 10px;
+      width: 40%;
+	  margin-right: 10%;
+      margin-top: 30px;
+	  line-height: 1.5em;
+  
+      }
+
+.check, .out {
+	width: auto;
+	height: 40px;
+	padding: 5px;
+	margin: 10px;
+	background-color: coral;
+	border: 3px ridge purple;
+	border-radius: 10px;
+	color: azure;
+	transition: 1s;
+	font-size: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.invisible {
+	display: none;
+}
+
+#first, #plus, #second, #equ, #yous, #answer {float: left;}
+#sur_prize {margin: 100px;
+			opacity: 1;}
+
+#prize {margin: 20px;}
+
+#startGame  {
+	width: 100px;
+	height: 40px;
+	margin-top: 35%;
+	background-color: coral;
+	border: 3px ridge purple;
+	border-radius: 10px;
+	color: azure;
+	transition: 1s;
+	font-size: inherit;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+
+	#startGame:hover {
+		width: 120px;
+		height: 60px;
+		background-color: brown;
+		border: 5px ridge red;
+		border-radius: 10px;
+		color: aliceblue;
+		box-shadow: 4px 3px 10px 2px gold, -4px -3px 10px 5px gold;
+		
+	}

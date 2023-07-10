@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="stylemath.css">
+  </head>
+<body>
+    <div class="wraper">
+        <canvas id="prize" width="290px" height="550px"></canvas>
+
+        <button id="startGame" value="Играть" class="invisible">"Играть"</button>
+        <br><br>
+        
+            <form id="summ">
+                <br><h1>Математический тренажер для школьников</h1>
+                <p>Выбери, какие числа ты будешь складывать:</p><br>
+                <label for="number_type">Только однозначные</label>
+                <input type="radio" class="type1" name="number_type" checked="checked" value="Однозначные" />
+                <label for="number_type">Однозначные и двузначные</label>
+                <input type="radio" class="type2" name="number_type" value="Двузначные" />
+
+                <br><br><p>Ну что же. Приступим. Я дам тебе 10 примеров на сложение, а ты пиши в поле рядом правильный ответ. 
+                Затем жми на кнопку "Проверить", и если ответ будет верным, жми на кнопку"Продолжить". Если у тебя будет 
+                больше 8 правильных ответов, тебя ждет приз.</p>
+                <p>Как ты думаешь, сколько будет</p>
+                <div id="first"></div> <div id="plus">+</div> <div id="second"></div> <div id="equ">=</div>
+                <!--<br><label for="result">Твой ответ:</label>-->
+                <input type="text" name="result" placeholder="ответ" id="result"><br><br>
+                <div id="yous">Твой ответ: </div><div id="answer"></div><br>
+                <div id="error_s" style="color: red"></div>
+                <div id="total" style="color: purple"></div><br>
+                <div id="notrue" style="color: purple"></div><br>
+                <div id="mark" style="color: purple"></div><br>
+                <input type="button" name="summ" class="check" value="Проверить">
+                <input type="button" class="out" id="out" name="count" value="Продолжить"><br><br>
+                <div id="victory" style="color: red"></div><br>
+                <input type="button" class="invisible" id="new" name="count" value="Начать снова"><br><br>
+            </form>
+
+
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jssumm.js"></script>
+<script src="js/game.js"></script>
+
+</html>
